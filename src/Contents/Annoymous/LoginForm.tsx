@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { LoginCredentials, useAuth } from "../lib/auth";
+import { LoginCredentials, useAuth } from "../../lib/auth";
 
 const LoginForm = (action: any) => {
     const {login} = useAuth();
@@ -11,7 +11,7 @@ const LoginForm = (action: any) => {
         {error && (
         <div>Error occured.</div>
         )}
-        <div>
+        <div className="login-form">
             <form onSubmit={async e => {
                 setError(null);
                 e.preventDefault();

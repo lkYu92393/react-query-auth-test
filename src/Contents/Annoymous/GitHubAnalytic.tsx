@@ -15,12 +15,15 @@ const GitHubAnalytic = () => {
             {error && (
                 <div>Error</div>
             )}
-            {data && (<div>
-                <h1>{data.name}</h1>
+            {data && (
+            <div className="top-bar">
+                <h1>Github Analytic {data.name}</h1>
                 <p>{data.description}</p>
-                <strong>👀 {data.subscribers_count}</strong>{' '}
-                <strong>✨ {data.stargazers_count}</strong>{' '}
-                <strong>🍴 {data.forks_count}</strong>{' '}
+                <div>
+                    <strong>👀 {data.subscribers_count}</strong>{' '}
+                    <strong>✨ {data.stargazers_count}</strong>{' '}
+                    <strong>🍴 {data.forks_count}</strong>{' '}
+                </div>
             </div>
             )}
         </>
