@@ -4,6 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
+<<<<<<< HEAD
 In the project directory, you can run:
 
 ### `npm start`
@@ -44,3 +45,8 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+=======
+Clone this repo and run `npm install`. Also clone the nodejs_db to act as data server (link: https://github.com/lkYu92393/nodejs_db).
+
+When running locally, this react app will use port 3000 while the db server use port 5000. Using the proxy builtin in react, it can access port 5000 without CORS.
+>>>>>>> dbfeffafec8ff0c4152f6a5518fbf0eedaad167d
